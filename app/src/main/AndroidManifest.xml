@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.smdeveloper.proyectoactivities">
+    package="com.smdeveloper.ProyectoAndroid_MinTIC">
 
     <application
         android:allowBackup="true"
@@ -10,15 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoActivities">
         <activity
-            android:name=".ThirdActivity"
+            android:name="com.smdeveloper.ProyectoAndroid_MinTIC.ThirdActivity"
             android:label="@string/activity_third"
             android:exported="false" />
         <activity
-            android:name=".SecondActivity"
+            android:name="com.smdeveloper.ProyectoAndroid_MinTIC.SecondActivity"
             android:label="@string/activity_second"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.smdeveloper.ProyectoAndroid_MinTIC.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

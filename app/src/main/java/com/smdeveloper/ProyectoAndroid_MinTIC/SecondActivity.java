@@ -1,4 +1,4 @@
-package com.smdeveloper.proyectoactivities;
+package com.smdeveloper.ProyectoAndroid_MinTIC;
 
 import androidx.appcompat.app.AppCompatActivity;
 

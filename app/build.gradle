@@ -6,7 +6,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.smdeveloper.proyectoactivities"
+        applicationId "com.smdeveloper.ProyectoAndroid_MinTIC"
         minSdk 21
         targetSdk 31
         versionCode 1
