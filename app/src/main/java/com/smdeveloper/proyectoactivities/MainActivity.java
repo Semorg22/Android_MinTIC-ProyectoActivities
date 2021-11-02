@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public void goToActivitySecond(View view) { //movernos entre activities
         Intent newIntent = new Intent(this,SecondActivity.class);
         newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
-        newIntent.putExtra("msg","Hola");
+        newIntent.putExtra("msg","Hola MinTIC");
         newIntent.putExtra("year",2021);
         startActivity(newIntent);
     }
