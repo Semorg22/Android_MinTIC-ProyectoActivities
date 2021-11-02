@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
          */
     }
 
-    public void goToActivitySecond(View view) { //movernos entre activities
+    //Movernos entre activities, metodo onClick del boton
+    public void goToActivitySecond(View view) {
         Intent newIntent = new Intent(this,SecondActivity.class);
         newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
         newIntent.putExtra("msg","Hola MinTIC");
@@ -31,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(newIntent);
     }
 
-    public boolean onKeyDown(int keyCode, KeyEvent event) { //Confirmación de salir de la app, dialogo como optionPane
+    //Confirmación para salir de la app, dialogo como optionPane
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
         if(keyCode == KeyEvent.KEYCODE_BACK){
             new AlertDialog.Builder(this,R.style.Theme_AppCompat_DayNight_Dialog_Alert)
                     .setIcon(android.R.drawable.ic_dialog_alert)
@@ -49,12 +51,14 @@ public class MainActivity extends AppCompatActivity {
         return super.onKeyDown(keyCode,event);
     }
 
+    //Poner el menu que creamos en el actionBar
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) { //poner el menu que creamos en el actionBar
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main,menu);
         return true;
     }
 
+    //Verifica que opcion se escogio en el menu
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         int id = menuItem.getItemId();
         if(id == R.id.mnu_second_activity) {
