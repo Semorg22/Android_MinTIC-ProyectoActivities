@@ -8,12 +8,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class SecondActivity extends AppCompatActivity {
+public class EmpleadoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_empleado);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Soporte de actionBar.mostrar
         getParametros();
     }

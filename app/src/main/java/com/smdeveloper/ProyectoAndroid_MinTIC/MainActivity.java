@@ -29,16 +29,18 @@ public class MainActivity extends AppCompatActivity {
         tv1.setText("Hola Mundo!");
     }
 
-    public void onWindowFocusChanged(boolean hasFocus) {
+    /*
+    public void onWindowFocusChanged(boolean hasFocus) { //permite saber cuanto mide el tv1
         super.onWindowFocusChanged(hasFocus);
         if(hasFocus){
             Toast.makeText(this, ""+tv1.getWidth(), Toast.LENGTH_SHORT).show();
         }
     }
+     */
 
     //Movernos entre activities, metodo onClick del boton
     public void goToActivitySecond(View view) {
-        Intent newIntent = new Intent(this,SecondActivity.class);
+        Intent newIntent = new Intent(this, EmpleadoActivity.class);
         newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
         newIntent.putExtra("msg","Hola MinTIC");
         newIntent.putExtra("year",2021);
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         int id = menuItem.getItemId();
         if(id == R.id.mnu_second_activity) {
-            Intent newIntent = new Intent(this,SecondActivity.class);
+            Intent newIntent = new Intent(this, EmpleadoActivity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
             newIntent.putExtra("msg","Hola MinTIC");
             newIntent.putExtra("year",2021);
@@ -83,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
         }
         else if(id == R.id.mnu_third_activity) {
             Intent newIntent = new Intent(this,ThirdActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
+            startActivity(newIntent);
+        }
+        else if(id == R.id.mnu_fouth_activity) {
+            Intent newIntent = new Intent(this,FourthActivity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
             startActivity(newIntent);
         }

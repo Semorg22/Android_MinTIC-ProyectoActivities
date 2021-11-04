@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoActivities">
         <activity
+            android:name=".FourthActivity"
+            android:exported="false"
+            android:label="@string/activity_fourth" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
@@ -20,9 +24,9 @@
             android:exported="false"
             android:label="@string/activity_third" />
         <activity
-            android:name=".SecondActivity"
+            android:name=".EmpleadoActivity"
             android:exported="false"
-            android:label="@string/activity_second" />
+            android:label="@string/activity_empleado" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
