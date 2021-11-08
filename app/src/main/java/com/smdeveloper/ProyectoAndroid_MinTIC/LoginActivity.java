@@ -36,12 +36,7 @@ public class LoginActivity extends AppCompatActivity {
             //tv1.setMovementMethod(LinkMovementMethod.getInstance());
         tv1.setText(Html.fromHtml(texto));
         
-        tv1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(LoginActivity.this, "Su contraseña es: admin1", Toast.LENGTH_SHORT).show();
-            }
-        });
+        tv1.setOnClickListener(v -> Toast.makeText(LoginActivity.this, "Su contraseña es: admin1", Toast.LENGTH_SHORT).show());
     }
 
     public void IniciarSesion(View view) {

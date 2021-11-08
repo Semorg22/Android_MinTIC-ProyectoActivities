@@ -14,11 +14,11 @@ public class EmpleadoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_empleado);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Soporte de actionBar.mostrar
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Soporte de actionBar.mostrar felchita para devolverse
         getParametros();
     }
 
-    //Destruir la app
+    //Destruir la activity
     public void onBackPressed() {
         finish();
     }
@@ -37,11 +37,5 @@ public class EmpleadoActivity extends AppCompatActivity {
         String msg = extras.getString("msg");
         int year = extras.getInt("year");
         Toast.makeText(this, msg + " " + year, Toast.LENGTH_SHORT).show();
-    }
-
-    public void goToActivityMain(View view) {
-        Intent newIntent = new Intent(this,MainActivity.class);
-        newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(newIntent);
     }
 }
