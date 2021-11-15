@@ -92,6 +92,11 @@ public class MainActivity extends AppCompatActivity {
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
             startActivity(newIntent);
         }
+        else if(id == R.id.mnu_encuesta) {
+            Intent newIntent = new Intent(this, EncuestaActivity.class);
+            newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
+            startActivity(newIntent);
+        }
         return super.onOptionsItemSelected(menuItem);
     }
 

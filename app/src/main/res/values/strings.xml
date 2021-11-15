@@ -4,6 +4,7 @@
     <string name="activity_empleado">Empleado</string>
     <string name="horizontal_scroll_view">Horizontal Scroll View</string>
     <string name="scroll_view">Vertical Scroll View</string>
+    <string name="activity_encuesta">Encuesta</string>
     <string name="usuario">Usuario</string>
     <string name="contrasena">Contraseña</string>
     <string name="iniciar_sesion">Iniciar Sesion</string>

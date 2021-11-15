@@ -10,8 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoActivities">
         <activity
-            android:name=".SplashScreen"
-            android:exported="false" />
+            android:name=".EncuestaActivity"
+            android:exported="false"
+            android:label="@string/activity_encuesta"/>
         <activity
             android:name=".ScrollViewActivity"
             android:exported="false"
@@ -31,7 +32,7 @@
             android:exported="false"
             android:label="@string/activity_empleado" />
         <activity
-            android:name=".EncuestaActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -29,6 +30,7 @@ public class EncuestaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_encuesta);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Soporte de actionBar.mostrar felchita para devolverse
 
         ti1 = findViewById(R.id.txt_nombre);
         ti2 = findViewById(R.id.txt_fecha_nacimiento);
@@ -131,5 +133,18 @@ public class EncuestaActivity extends AppCompatActivity {
                         + "\n" + nivel_satisf)
                 .setPositiveButton("Aceptar", null).show();
 
+    }
+
+    //Destruir la activity y que funcione la flecha para atras
+    public void onBackPressed() {
+        finish();
+    }
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        int id = menuItem.getItemId();
+        if(id == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected(menuItem);
     }
 }
