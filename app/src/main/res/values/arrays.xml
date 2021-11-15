@@ -17,4 +17,11 @@
         <item>Sub-Gerente</item>
         <item>Socio</item>
     </string-array>
+
+    <string-array name="lista_nivel_ingles">
+        <item>Seleccione...</item>
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>No tan Bueno</item>
+    </string-array>
 </resources>

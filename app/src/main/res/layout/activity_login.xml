@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="TextView"
-                android:textSize="@dimen/size14" />
+                android:textSize="@dimen/texto_14" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
