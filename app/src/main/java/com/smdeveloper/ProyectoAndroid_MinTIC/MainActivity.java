@@ -11,7 +11,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -76,20 +75,20 @@ public class MainActivity extends AppCompatActivity {
     //Verifica que opcion se escogio en el menu
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         int id = menuItem.getItemId();
-        if(id == R.id.mnu_second_activity) {
+        if(id == R.id.mnu_empleado) {
             Intent newIntent = new Intent(this, EmpleadoActivity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
             newIntent.putExtra("msg","Hola MinTIC");
             newIntent.putExtra("year",2021);
             startActivity(newIntent);
         }
-        else if(id == R.id.mnu_third_activity) {
-            Intent newIntent = new Intent(this,ThirdActivity.class);
+        else if(id == R.id.mnu_horizontal_scroll_view) {
+            Intent newIntent = new Intent(this, HorizontalScrollView_Activity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
             startActivity(newIntent);
         }
-        else if(id == R.id.mnu_fouth_activity) {
-            Intent newIntent = new Intent(this,FourthActivity.class);
+        else if(id == R.id.mnu_scroll_view) {
+            Intent newIntent = new Intent(this, ScrollViewActivity.class);
             newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
             startActivity(newIntent);
         }

@@ -14,13 +14,16 @@
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/splash_screen" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/aladin"
         android:text="Proyecto Android"
+        android:textAppearance="@style/mi_estilo"
         android:textColor="#000000"
         android:textSize="20dp" />
 
@@ -51,7 +54,7 @@
                 android:drawableLeft="@drawable/ic_user"
                 android:drawablePadding="4dp"
                 android:ems="10"
-                android:hint="Usuario"
+                android:hint="@string/usuario"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -62,23 +65,28 @@
                 android:drawableLeft="@drawable/ic_password"
                 android:drawablePadding="4dp"
                 android:ems="10"
-                android:hint="Contraseña"
+                android:hint="@string/contrasena"
                 android:inputType="textPassword" />
 
             <Button
                 android:id="@+id/button6"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:backgroundTint="@color/teal_200"
+                android:drawableLeft="@drawable/ic_second_activity"
                 android:onClick="IniciarSesion"
-                android:text="Iniciar Sesion" />
+                android:text="@string/iniciar_sesion"
+                android:textAllCaps="false" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="@dimen/size14" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

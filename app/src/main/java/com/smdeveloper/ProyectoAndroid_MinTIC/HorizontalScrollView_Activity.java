@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class FourthActivity extends AppCompatActivity {
+public class HorizontalScrollView_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fourth);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setContentView(R.layout.activity_horizontal_scroll_view);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Soporte de actionBar.mostrar
     }
 
     //Destruir la app
@@ -19,7 +19,6 @@ public class FourthActivity extends AppCompatActivity {
         finish();
     }
 
-    //Oprimir el boton de volver, y cerrar la activity
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         int id = menuItem.getItemId();
         if(id == android.R.id.home) {

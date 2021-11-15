@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class ThirdActivity extends AppCompatActivity {
+public class ScrollViewActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Soporte de actionBar.mostrar
+        setContentView(R.layout.activity_scroll_view);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     //Destruir la app
@@ -19,6 +19,7 @@ public class ThirdActivity extends AppCompatActivity {
         finish();
     }
 
+    //Oprimir el boton de volver, y cerrar la activity
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         int id = menuItem.getItemId();
         if(id == android.R.id.home) {

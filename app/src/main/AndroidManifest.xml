@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoActivities">
         <activity
-            android:name=".FourthActivity"
+            android:name=".EncuestaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScrollViewActivity"
             android:exported="false"
-            android:label="@string/activity_fourth" />
+            android:label="@string/scroll_view" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
@@ -20,9 +23,9 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ThirdActivity"
+            android:name=".HorizontalScrollView_Activity"
             android:exported="false"
-            android:label="@string/activity_third" />
+            android:label="@string/horizontal_scroll_view" />
         <activity
             android:name=".EmpleadoActivity"
             android:exported="false"
