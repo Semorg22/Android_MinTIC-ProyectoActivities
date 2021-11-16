@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         if(id == R.id.mnu_empleado) {
             SharedPreferences settings = getSharedPreferences("id", Context.MODE_PRIVATE);
             //Toast.makeText(this, settings.getString("user",""), Toast.LENGTH_SHORT).show();
-            if(settings.getString("user","").equals("admin")){
+            if(settings.getString("user","").equals("admin1")){
                 Intent newIntent = new Intent(this, EmpleadoActivity.class);
                 newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //evita crear pestañas continuas
                 newIntent.putExtra("msg","Hola MinTIC");
