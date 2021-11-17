@@ -14,12 +14,20 @@
         tools:context=".EmpleadoActivity">
 
         <EditText
-            android:id="@+id/input_nombre"
+            android:id="@+id/input_dni"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Identificación"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/input_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_dni"
             android:ems="10"
             android:hint="Nombres"
             android:inputType="textPersonName" />
